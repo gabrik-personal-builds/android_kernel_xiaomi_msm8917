@@ -1245,7 +1245,7 @@ CSID_TG:
 		printk("read fusion id fail\n");
 	}
 
-	printk("camera sensor probe %s succeeded\n", slave_info->sensor_name);
+	pr_err("%s probe succeeded", slave_info->sensor_name);
 
 	/*
 	 * Update the subdevice id of flash-src based on availability in kernel.
